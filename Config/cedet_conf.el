@@ -1,0 +1,7 @@
+(require 'cedet)
+(semantic-mode 1)
+(require 'semantic)
+(require 'semantic/ia)
+(defun my-semantic-hook ()
+  (imenu-add-to-menubar "TAGS"))
+(add-hook 'semantic-init-hooks 'my-semantic-hook)
